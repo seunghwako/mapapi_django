@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-import mapapi.views
+import map.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', mapapi.views.home, name="home"),
-    path('seunghwa', mappai.views.seunghwa, name="seunghwa"),
-    path('yeonbeen', mappai.views.yeonbeen, name="yeonbeen"),
+    path('', map.views.home, name="home"),
+    path('seunghwa/', map.views.seunghwa, name="seunghwa"),
+    path('yeonbeen/', map.views.yeonbeen, name="yeonbeen"),
 ]
